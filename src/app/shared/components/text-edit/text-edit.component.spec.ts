@@ -1,4 +1,4 @@
-import { HighlightBracketsPipe } from './../../pipes/highlight-brackets.pipe';
+import { HighlightBracketsPipe } from '../../pipes/highlight-brackets.pipe';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TextEditComponent } from './text-edit.component';

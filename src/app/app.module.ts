@@ -2,12 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { TextEditComponent } from './components/text-edit/text-edit.component';
-import { HighlightBracketsPipe } from './pipes/highlight-brackets.pipe';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
-  declarations: [AppComponent, TextEditComponent, HighlightBracketsPipe],
-  imports: [BrowserModule],
+  declarations: [AppComponent],
+  imports: [BrowserModule, SharedModule],
   providers: [],
   bootstrap: [AppComponent],
 })
