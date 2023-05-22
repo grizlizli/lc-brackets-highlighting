@@ -1,5 +1,16 @@
 # LcBracketsHighlighting
 
+## Task description
+
+Implement an editable text block where words wrapped in square brackets are highlighted in blue, and words wrapped in curly brackets are highlighted in green.
+Overlapping patterns should be ignored, they shouldn't be highlighted.
+The component should be implemented in a separate module of Angular application.
+The application should be published on GitHub in a public repository.
+
+For example:
+[Hello/Hi/Greetings] {Name}, how are you? // [Hello/Hi/Greetings] and {Name} are correct patterns
+[Hello {Surname}/Hi/Greetings] {Name [...] Surname}, how are you? // These patterns are incorrect
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
 
 ## Development server
