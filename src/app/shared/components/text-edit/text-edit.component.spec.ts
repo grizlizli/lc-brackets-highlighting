@@ -1,7 +1,7 @@
-import { HighlightBracketsPipe } from '../../pipes/highlight-brackets.pipe';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TextEditComponent } from './text-edit.component';
+import { HighlightBracketsPipe } from '../../pipes/highlight-brackets/highlight-brackets.pipe';
 
 describe('TextEditComponent', () => {
   let component: TextEditComponent;
