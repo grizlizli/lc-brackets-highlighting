@@ -20,7 +20,7 @@ export class TextEditComponent {
   @Input()
   public set value(value: string) {
     if (value !== this.value) {
-      this.edited.emit(this.value);
+      this.edited.emit(value);
     }
     this._value = value;
   }
