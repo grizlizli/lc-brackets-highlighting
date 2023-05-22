@@ -4,9 +4,7 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
+      declarations: [AppComponent],
     }).compileComponents();
   });
 
@@ -19,13 +17,15 @@ describe('AppComponent', () => {
   it(`should have as title 'lc-brackets-highlighting'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('lc-brackets-highlighting');
+    expect(app.title).toEqual('Launch Control Brackets Highlighting');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('lc-brackets-highlighting app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain(
+      'Launch Control Brackets Highlighting app is running!'
+    );
   });
 });
